@@ -1,10 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import UserProfile from "./UserProfile";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function App() {
+  const appStyle = {
+    minHeight: "100vh",
+    padding: "20px",
+    backgroundColor: "#f0f2f5",
+  };
+
+  return (
+    <div style={appStyle}>
+      <UserProfile />
+    </div>
+  );
+}
+
+export default App;
